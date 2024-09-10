@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url ('C:\Users\ead\Desktop\Animações CSS\img/cahorro2.jpg');
+    background-size: cover;
+    color: #333
+}
+
+/* Cabeçalho */
+header {
+    background-image: url ('C:\Users\ead\Desktop\Animações CSS\img/cachorro2.jpg')
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.text-effects h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.effect-fill:hover {
+    background-image: linear-gradient(to right, #f2709c, #ff9472);
+    background-clip: text;
+    /* O gradiente é aplicado apenas no tipo de dado escolhido */
+    -webkit-background-clip: text;
+    /* Compatibilidade com navegadores baseado em webkit */
+    color: transparent;
+}
+
+.effect-scale:hover {
+    transform: scale(1.2)
+    /*aumenta o tamanho do texto em 20% */
+}
+
+.effect-fade-in {
+    opacity: 0;
+    /*texto iniciará invisível */
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.effect-rotate:hover {
+    transform: rotate (50deg);
+}
+
+.effect-shadow:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.effect-border-grow:hover {
+    border: 2px solid #ff9472;
+    padding: 5px;
+}
+
+.effect-glow:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.effect-float:hover {
+    transform: translateY(-10px);
+}
+
+.effect-color-shift:hover {
+    color: #ddd;
+}
+
+.effect-blur:hover {
+    filter: blur(2px);
+}
+
+/* Estilos para os efeitos nas caixas */
+.box-effects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* estilos gerais das caixas */
+.box {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    background-color: #f2709c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.box-shadow:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.box-zoom:hover {
+    transform: scale (1.1);
+}
+
+.box-hover
